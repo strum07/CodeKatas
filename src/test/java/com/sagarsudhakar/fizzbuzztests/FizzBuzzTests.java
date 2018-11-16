@@ -1,14 +1,15 @@
-package com.sagarsudhakar;
+package com.sagarsudhakar.fizzbuzztests;
 
+import com.sagarsudhakar.fizzbuzz.FizzBuzz;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class FizzBuzzTest
+public class FizzBuzzTests
 {
 
     @Test
     public void FizzBuzz_Of_0is0(){
-        assertEquals("0",FizzBuzz.of(0));
+        assertEquals("0", FizzBuzz.of(0));
     }
 
 
@@ -41,5 +42,21 @@ public class FizzBuzzTest
     @Test
     public void FizzBuzz_Of_15isFizzBuzz(){
         assertEquals("FizzBuzz",FizzBuzz.of(15));
+    }
+
+    @Test
+    public void FizzBuzz_Of_737isFizz(){
+        assertEquals("Fizz",FizzBuzz.of(737));
+    }
+
+
+    @Test
+    public void FizzBuzz_Of_757isFizz(){
+        assertEquals("Buzz",FizzBuzz.of(757));
+    }
+
+    @Test
+    public void FizzBuzz_Of_7537isFizz(){
+        assertEquals("FizzBuzz",FizzBuzz.of(7537));
     }
 }
