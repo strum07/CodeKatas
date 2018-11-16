@@ -13,15 +13,15 @@ public class FizzBuzz {
     }
 
     private static String _of(int input) {
-        String fizzBuzzValue = "" ;
+        StringBuilder fizzBuzzValue = new StringBuilder();
 
         if(isValidFizz(input))
-            fizzBuzzValue = "Fizz";
+            fizzBuzzValue.append("Fizz");
 
         if (isValidBuzz(input))
-            fizzBuzzValue += "Buzz";
+            fizzBuzzValue.append("Buzz");
 
-        return fizzBuzzValue.equals("")?String.valueOf(input):fizzBuzzValue;
+        return fizzBuzzValue.length()<1?String.valueOf(input):fizzBuzzValue.toString();
     }
 
     private static boolean isValidFizz(int input){

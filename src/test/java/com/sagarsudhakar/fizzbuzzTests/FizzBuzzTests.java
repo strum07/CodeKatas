@@ -12,12 +12,10 @@ public class FizzBuzzTests
         assertEquals("0", FizzBuzz.of(0));
     }
 
-
     @Test
     public void FizzBuzz_Of_1_is1(){
         assertEquals("1",FizzBuzz.of(1));
     }
-
 
     @Test
     public void FizzBuzz_Of_3_isFizz(){
@@ -48,7 +46,6 @@ public class FizzBuzzTests
     public void FizzBuzz_Of_737_isFizz(){
         assertEquals("Fizz",FizzBuzz.of(737));
     }
-
 
     @Test
     public void FizzBuzz_Of_757_isBuzz(){
