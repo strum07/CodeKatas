@@ -8,55 +8,60 @@ public class FizzBuzzTests
 {
 
     @Test
-    public void FizzBuzz_Of_0is0(){
+    public void FizzBuzz_Of_0_is0(){
         assertEquals("0", FizzBuzz.of(0));
     }
 
 
     @Test
-    public void FizzBuzz_Of_1is1(){
+    public void FizzBuzz_Of_1_is1(){
         assertEquals("1",FizzBuzz.of(1));
     }
 
 
     @Test
-    public void FizzBuzz_Of_3isFizz(){
+    public void FizzBuzz_Of_3_isFizz(){
         assertEquals("Fizz",FizzBuzz.of(3));
     }
 
     @Test
-    public void FizzBuzz_Of_5isBuzz(){
+    public void FizzBuzz_Of_5_isBuzz(){
         assertEquals("Buzz",FizzBuzz.of(5));
     }
 
     @Test
-    public void FizzBuzz_Of_6isFizz(){
+    public void FizzBuzz_Of_6_isFizz(){
         assertEquals("Fizz",FizzBuzz.of(6));
     }
 
     @Test
-    public void FizzBuzz_Of_10isBuzz(){
+    public void FizzBuzz_Of_10_isBuzz(){
         assertEquals("Buzz",FizzBuzz.of(10));
     }
 
     @Test
-    public void FizzBuzz_Of_15isFizzBuzz(){
+    public void FizzBuzz_Of_15_isFizzBuzz(){
         assertEquals("FizzBuzz",FizzBuzz.of(15));
     }
 
     @Test
-    public void FizzBuzz_Of_737isFizz(){
+    public void FizzBuzz_Of_737_isFizz(){
         assertEquals("Fizz",FizzBuzz.of(737));
     }
 
 
     @Test
-    public void FizzBuzz_Of_757isFizz(){
+    public void FizzBuzz_Of_757_isBuzz(){
         assertEquals("Buzz",FizzBuzz.of(757));
     }
 
     @Test
-    public void FizzBuzz_Of_7537isFizz(){
+    public void FizzBuzz_Of_7537_isFizzBuzz(){
         assertEquals("FizzBuzz",FizzBuzz.of(7537));
+    }
+
+    @Test
+    public void FizzBuzz_Of_1111_is1111(){
+        assertEquals("1111",FizzBuzz.of(1111));
     }
 }
