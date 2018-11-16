@@ -1,4 +1,4 @@
-package com.sagarsudhakar.fizzbuzztests;
+package com.sagarsudhakar.fizzbuzzTests;
 
 import com.sagarsudhakar.fizzbuzz.FizzBuzz;
 import org.junit.Test;
