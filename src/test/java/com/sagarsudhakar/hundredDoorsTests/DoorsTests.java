@@ -8,14 +8,7 @@ import java.util.Arrays;
 
 public class DoorsTests {
 
-    Doors ob = new Doors(100);
 
-    @Test
-    public void Doors_AllDoorsClosed_WhenCreated(){
-
-
-        Assert.assertEquals(1,1);
-    }
 
 
 }
