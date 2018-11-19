@@ -30,10 +30,13 @@ public class ThreadRacer implements Runnable {
         t1.start();
 
         t3.join();
+
         t2.start();
+
         t1.join();
 
         t4.start();
+
         t2.join();
         t4.join();
         t5.join();
