@@ -113,7 +113,283 @@ Create a class and functions which allow you to add and retrieve (latest first) 
  
  
      
+     
+ Find the smallest amount of changes in a string so it becomes a re-arranged version of another string.   
+ 
+ Sum two numbers, each represented in a linked list with an element per digit, and return a linked list with the sum        
+    
+ A linked list represents a number. From head to tail, the number represents a power of 10 until reaching 10^0 on the number right before the tail.   
+  
+ Create a class and functions which allow you to add and retrieve (latest first) urls.   
+ 
+  It was a data structure problem like transforming a tree to the form he asked (in place)   
+  
+  calculate the best profit from an array of stock prices for a day.
+  
+  
+ Implement a system(class) which has two methods. One method takes a stock name and amount as the input and adds up the amount if there already exists the company's name in your storage, otherwise add a new entry. The second method takes an integer as an input and returns the number of companies with the largest stocks.  
+  
+ If you have a string BLOOMBERG, what is the minimum distance of each letter from the character 'B'.    
+ 
+ Given a 2d array of 1's and 0's, count the number of islands that the 1's form.   
+  
+ Given two strings, find every occurrence of the first string in the second string     
+ 
+  Write a function that can prove if two strings are anagrams   
+  
+   New York Subway Line   
+   
+   
+    How would you implement a hash function for a particular data structure.   
+    
+ 1. The first non-repeating character in the string
+ 2. Flatten a multilevel singly linked list 
+ 
+ Write a solution to print the values of a binary tree in order.  
+ 
+  zigzag traversal of array   
+  
+    given 100s of data objects with price and time info for comapny. Store so that you can query the data to get max price for company among given time range   
+    
+    
+    Breadth First Search. 
+    
+ Make sure you know your data structures like linked lists and binary search trees. Also know your searching and sorting algorithms (I was asked to implement merge sort).
+ 
+ given a list of integer, return a list of all its permutation   
+  
+ search in a rotated sorted array   
+   
+ anomaly detection for transaction data   
+    
+ Two sum, BFS, given a list of intervals find the overlap, design questions related to stock monitoring platforms   
+     
+Find the intersection of lists. Repetition is allowed. Order is not considered.   
+
+
+ Flatten a singly linked list with a down pointer   
+ 
+  In a Directed Acyclic Graph print out all the paths from a source node to a target node   
+  
+  
+   Given a string of functions, return an array of the highest level functions   
+   
+   
+   String manipulation. What parenthesis to remove to make the string valid. "(a))" to "(a)" or "))a((" to "a"
+   
+   
+   Giving a tuple (ord, str) of type (string, string), check whether all the characters that appear in both str and ord are in the order of ord.
+   Examples:
+   (abc, qaqbqc) -> True
+   (abc, aaaqbbb) -> True
+   (abc, caaabbbccc) -> False
+   
+   
+   round 1
+   1. Get the most trending tweet from a feed of user tweets
+   2. word wrapping problem
+   
+   round 2
+   design the k most visited URLs for chrome    
+        
+        
+ Given an array of integers, such that their product is also a 32-bit signed integer, replace each element of the array with the product of all elements besides it
+   
+   
+   
+ problems that required hash maps to solve   
+    
+    
+ Given a log of TV show viewings, determine what episode of each show is the most addictive, to be judged by retention rate after that particular episode.   
+    
+    
+ First n rows of pascals triangle   
+ 
+ Adding two numbers represented as linked lists    
+ 
+ Given multiple fully connected sets of verts, find connected components between sets.   
+ 
+ Binary search in a rotated array          
+ 
+  Asked to solve the Zuma Game problem (you can see it on leetcode).   
+  
+  1. Given a string , sorted under 2 conditions
+  1) Frequency of the letter
+  2) If frequency is a tie, then sorted in alphabetical order. 
+  
+  I must stress -- be prepared to answer, "what interests you at Bloomberg" or "why do you want to work here" very well and many times!
+  
+  
+ Describe one of your favorite projects that you've recently worked on.   
+   
+ What interests you about Bloomberg? (Be prepared to answer this many times!)   
+      
+ Data structures (Heaps, Trees), medium level leetcode. Live coding.   
+ 
+ 
+  Data Structure problem, and 1 leetcode medium question   
+  
+  basic behavior questions. A linked list with next node and down node, the down node has higher priority, convert it to a normal list. 
+  
+   Two sum question, leetcode medium questions.   
+   
+   
+    Validate a Binary Search Tree.   
+    
+     The traditional LRU problem was given. Like implement an LRU cache. Also, they asked me some ML questions.   
+     
+     
+     Make a deep copy of a linked list with an additional random pointer.
+     Remove multiple intervals from an array. 
+     
+      Design a system to keep URL history with access frequency.   
+     
+     
+      subset of string   
+       
+       Determine if a string has balanced parenthesis.     
+        Find all issues with source code (presented on printed paper).    
+        
+        Given two variations of for loops, pick pick which one I would use and explain why.    
+        
+         Write method to determine all prime numbers.   
+         
+         
+         Matrix multiplication (3X3 to 1X3). I forgot the actual logic, but I quickly picked up the logic and wrote the program once he explained the basic logic with a simple example.
+         
+         
+          Time and space complexity of the above functions.   
+         
+         
+          Design an algorithm to determine whether a binary tree is valid.   
+          
+      Find all shortest paths from start to goal given that you have access only to distance between a node and its immediate neighbors. 
+      
+      
+      Top k out of N (>>k).
+      was part of a larger, more elaborate question
+      
+      
+       Rotate array    
+       Simple binary search question with a twist that made it a bit harder   .
+       
+       
+       
+     There were two questions, both in Leetcode. One easy, one hard
+       
+     Second highest number in an array   
+        
+     One question about creating a schedule based on the meeting timings of an employee. It was an easy question and I solved with just a little help.
+        
+     One question I remember was to create a function that accepts a number and returns the string representation of the number.   
+         
+     Second Interview: There will be a meeting at New York and San Francisco offices. We will have to fly the participants to either one of these two offices. Let's say each office can accommodate half of the participants. Our goal is to assign each participant to an office in a way that the total travel cost for the company is minimized. What is this minimal cost? SF NY A 500 700 B 200 600 C 400 500 D 600 200 Output : 1300 (A:500 + B:200 + C:400 +D: 200) 
+            
+     How to keep the average from a stream of values.   
     
     
     
-    
+     Linked Lists featured in the technical interview, especially doubly-linked lists.   
+     
+     Lists and basic algorithm questions   
+      
+     Find pivot element in a rotated sorted array.   
+     
+      Matrix grid problem similar to number of islands problem.   
+      
+      Questions were on arrays, dynamic programming, divide and conquer, binary tree. I… 
+      
+       Q: Eliminate duplicate consecutive words from a huge string   
+       
+       
+        Design a keyboard using a data structure, keys can be arranged in anyways.   
+        
+         just ask how you traverse through a tree.
+         
+         
+          How many shortest paths are there in a 4x4 grid.   
+          
+          
+          1.merge two sorted linked list
+          2.LRU problem
+          
+          
+          
+      write a function to find a word in a file.   .
+      
+      
+      Two Sum and encode string 
+      
+      two sum and three sum.
+      
+      
+      Technical question included building a program to manipulate a string.   
+      
+      
+       Why Bloomberg?
+      - Tell me about a project you enjoyed working on.   
+     
+      what is normalization?   
+       
+       
+      Create a function which receives a string and returns a string with all spaces doubled, in O(1)   
+     
+   Mostly LeetCode Easy level questions. Topics included dynamic programming, arrays, object-oriented design, graphs/trees (nothing like Dijkstra's ), space-time trade off, being conscious of allotted space, some mathematical/statistical concepts (though they'll explain if you're unfamiliar).
+   
+   Space and time complexity analyses seemed to be emphasized, so know how to do those. I provided multiple answers to all the questions, so maybe that helps.   
+   
+   
+   The coding questions was a candy crush string problem. The input is a string that contains capital letters. If there are three or more same letters in a row, you need to compress them. You need to compress until there are there are no three or more letters are next to each other.  
+   
+   
+   No Offer
+   Neutral Experience
+   Average Interview
+   
+   Application
+   
+   I applied online. The process took 4+ weeks. I interviewed at Bloomberg L.P. (New York, NY).
+   
+   Interview
+   
+   1st round was a 1-hour phone interview where I was asked to solve two coding questions. Leetcode easy and medu=ium. 1st one was related to array and second related to reading files and storing values in a data structure.
+   
+   After that, I got an invite for an onsite interview. There were two rounds about an hour 30 minutes each. In both round, you are expected to solve coding problems. First one was related to palindrome and LRU cache. 2nd related to Binary Search Tree.
+   
+   After that, I was told there will be no further interviews and after few days I got a reject.Show Less
+   
+   Interview Questions
+   
+       LRU cache, BST, Palindrome  
+       Answer Question
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        Find the intersection of two lists.   Phone call : Leetcode Add two numbers + projects
+                                              Onsite: projects + leetcode deep copy of a linked list 
+                                              
+                                              
+                                              
+       Next Greater Element II on LeetCode   
+       
+       
+        2 sum problem. Find 2 numbers that add up to a given value   
+        
+        
+        I was given a substringcalculator class and asked to add code that would read through the input and generate a specific output. The input was ASCII characters
+
+
+ 	#	Title	Acceptance	Difficulty	Frequency
+	
+	
+   
