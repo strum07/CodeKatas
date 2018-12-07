@@ -46,7 +46,6 @@ Note that 'A' and 'a' are treated as two different characters.
 
 import java.util.*;
 
-import static java.util.Map.Entry.comparingByValue;
 import static java.util.stream.Collectors.toMap;
 
 public class FrequencySort {
@@ -56,11 +55,8 @@ public class FrequencySort {
             if(input.length()<3){
                 return input;
             }
-            ArrayList<Character> sequence = new ArrayList<>();
-            int counter = 0;
+
             HashMap<Character,Integer> frequencyMap = new HashMap<>();
-
-
 
             for(int i=0;i<input.length();i++){
                 char inspect = input.charAt(i);
@@ -69,21 +65,10 @@ public class FrequencySort {
                     int times = frequencyMap.get(inspect);
                     frequencyMap.put(inspect,(times+1));
                 } else {
-                    sequence.add(inspect);
-                    counter++;
                     frequencyMap.put(inspect,1);
                 }
             }
 
-            StringBuilder sb = new StringBuilder();
-            int times = 0;
-
-            for (char aSequence : sequence) {
-                times = frequencyMap.get(aSequence);
-                for (int k = 0; k < times; k++) {
-                    sb.append(aSequence);
-                }
-            }
 
             Map<Character,Integer> sortedMap = frequencyMap
                     .entrySet()
@@ -93,6 +78,15 @@ public class FrequencySort {
                             toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2,
                                     LinkedHashMap::new));
 
+            int times;
+            StringBuilder sb = new StringBuilder();
+            for (char aSequence : sortedMap.keySet()) {
+                times = sortedMap.get(aSequence);
+                for (int k = 0; k < times; k++) {
+                    sb.append(aSequence);
+                }
+            }
+
             System.out.println("String: "+input);
             System.out.println("Frequency Map Keys/Values:");
             System.out.println(frequencyMap.keySet());
@@ -100,36 +94,13 @@ public class FrequencySort {
             System.out.println("Sorted Map:");
             System.out.println(sortedMap.keySet());
             System.out.println(sortedMap.values());
-            System.out.println("Sequence:");
-            System.out.println(sequence);
-
-            StringBuilder sb1 = new StringBuilder();
-            for (char aSequence : sortedMap.keySet()) {
-                times = sortedMap.get(aSequence);
-                for (int k = 0; k < times; k++) {
-                    sb1.append(aSequence);
-                }
-            }
-
             System.out.println("Sorted String: ");
-            System.out.println(sb1);
+            System.out.println(sb);
             System.out.println("");
 
-
-            return sb1.toString();
+            return sb.toString();
         }
 
         return "";
-    }
-
-
-    public static String sort(String input){
-
-        if((input != null) || !input.isEmpty()){
-
-        }
-
-        return "";
-
     }
 }
