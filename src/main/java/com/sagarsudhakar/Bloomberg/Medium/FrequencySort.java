@@ -4,7 +4,7 @@ package com.sagarsudhakar.Bloomberg.Medium;
 451. Sort Characters By Frequency
 Medium
 
-Given a string, sequenceSort it in decreasing order based on the frequency of characters.
+Given a string, sort it in decreasing order based on the frequency of characters.
 
 Example 1:
 
@@ -49,9 +49,7 @@ import java.util.*;
 import static java.util.stream.Collectors.toMap;
 
 public class FrequencySort {
-
-    public static String sequenceSort(String input) {
-
+    public static String sort(String input) {
         if((input != null) || !input.isEmpty()){
 
             if(input.length()<3){
@@ -75,27 +73,51 @@ public class FrequencySort {
 
             int times;
             StringBuilder sb = new StringBuilder();
-            for (char aSequence : sortedMap.keySet()) {
-                times = sortedMap.get(aSequence);
+            for (char element : sortedMap.keySet()) {
+                times = sortedMap.get(element);
                 for (int k = 0; k < times; k++) {
-                    sb.append(aSequence);
+                    sb.append(element);
+                }
+            }
+            return sb.toString();
+        }
+        return "";
+    }
+
+
+    public String frequencySort(String input) {
+
+        if (input==null || input.length()==0)
+            return input;
+
+        int inputLength = input.length();
+
+        char[] charArray = new char[inputLength];
+
+        int[] charFrequency = new int[128];
+
+        for (char ch : input.toCharArray()) {
+            charFrequency[ch]++;
+        }
+        int pos = 0;
+
+        while (pos < inputLength) {
+            char max = 0;
+
+            for (int i = 0; i < charFrequency.length; i ++){
+
+                if (charFrequency[i] > charFrequency[max]) {
+                    max = (char)i;
                 }
             }
 
-            System.out.println("String: "+input);
-            System.out.println("Frequency Map Keys/Values:");
-            System.out.println(frequencyMap.keySet());
-            System.out.println(frequencyMap.values());
-            System.out.println("Sorted Map:");
-            System.out.println(sortedMap.keySet());
-            System.out.println(sortedMap.values());
-            System.out.println("Sorted String: ");
-            System.out.println(sb);
-            System.out.println("");
-
-            return sb.toString();
+            while (charFrequency[max] != 0) {
+                charArray[pos++] = max;
+                charFrequency[max]--;
+            }
         }
 
-        return "";
+        return new String(charArray);
     }
+
 }
