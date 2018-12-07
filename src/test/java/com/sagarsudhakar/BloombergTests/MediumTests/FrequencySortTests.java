@@ -60,9 +60,9 @@ public class FrequencySortTests {
 
     @Test
     public void Sort_Length3Different4CharactersString_ReturnsSortedString(){
-        String input = "cccaaa";
+        String input = "tree";
         String sortedString = FrequencySort.sequenceSort(input);
-        Assert.assertEquals("cccaaa",sortedString);
+        Assert.assertEquals("eert",sortedString);
     }
 
 }

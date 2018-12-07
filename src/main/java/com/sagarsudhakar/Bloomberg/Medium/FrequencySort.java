@@ -51,7 +51,9 @@ import static java.util.stream.Collectors.toMap;
 public class FrequencySort {
 
     public static String sequenceSort(String input) {
+
         if((input != null) || !input.isEmpty()){
+
             if(input.length()<3){
                 return input;
             }
@@ -59,16 +61,9 @@ public class FrequencySort {
             HashMap<Character,Integer> frequencyMap = new HashMap<>();
 
             for(int i=0;i<input.length();i++){
-                char inspect = input.charAt(i);
-
-                if (frequencyMap.containsKey(inspect)) {
-                    int times = frequencyMap.get(inspect);
-                    frequencyMap.put(inspect,(times+1));
-                } else {
-                    frequencyMap.put(inspect,1);
-                }
+                char element = input.charAt(i);
+                frequencyMap.put(element,frequencyMap.getOrDefault(element,0)+1);
             }
-
 
             Map<Character,Integer> sortedMap = frequencyMap
                     .entrySet()
