@@ -44,9 +44,10 @@ Note that 'A' and 'a' are treated as two different characters.
 
  */
 
-import java.util.ArrayList;
+import java.util.*;
 
-import java.util.HashMap;
+import static java.util.Map.Entry.comparingByValue;
+import static java.util.stream.Collectors.toMap;
 
 public class FrequencySort {
 
@@ -84,15 +85,38 @@ public class FrequencySort {
                 }
             }
 
+            Map<Character,Integer> sortedMap = frequencyMap
+                    .entrySet()
+                    .stream()
+                    .sorted(Collections.reverseOrder(Map.Entry.comparingByValue()))
+                    .collect(
+                            toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2,
+                                    LinkedHashMap::new));
+
+            System.out.println("String: "+input);
             System.out.println("Frequency Map Keys/Values:");
             System.out.println(frequencyMap.keySet());
             System.out.println(frequencyMap.values());
-
+            System.out.println("Sorted Map:");
+            System.out.println(sortedMap.keySet());
+            System.out.println(sortedMap.values());
             System.out.println("Sequence:");
             System.out.println(sequence);
 
+            StringBuilder sb1 = new StringBuilder();
+            for (char aSequence : sortedMap.keySet()) {
+                times = sortedMap.get(aSequence);
+                for (int k = 0; k < times; k++) {
+                    sb1.append(aSequence);
+                }
+            }
 
-            return sb.toString();
+            System.out.println("Sorted String: ");
+            System.out.println(sb1);
+            System.out.println("");
+
+
+            return sb1.toString();
         }
 
         return "";

@@ -53,9 +53,9 @@ public class FrequencySortTests {
 
     @Test
     public void Sort_Length3Different3CharactersString_ReturnsSortedString(){
-        String input = "abcd";
+        String input = "tree";
         String sortedString = FrequencySort.sequenceSort(input);
-        Assert.assertEquals("abcd",sortedString);
+        Assert.assertEquals("eert",sortedString);
     }
 
 }
