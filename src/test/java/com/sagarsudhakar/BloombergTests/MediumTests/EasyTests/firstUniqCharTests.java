@@ -53,5 +53,4 @@ public class firstUniqCharTests {
         Assert.assertEquals(2, firstUniqChar.find(input));
     }
 
-
 }
